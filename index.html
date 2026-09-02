@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrightPath Digital | Free PPC Audit</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: #1f2937; }
+    header { background: #ffffff; border-bottom: 1px solid #e5e7eb; padding: 18px 28px; }
+    .brand { font-weight: 700; font-size: 20px; }
+    .hero { max-width: 900px; margin: 70px auto; padding: 0 24px; display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; }
+    h1 { font-size: 44px; line-height: 1.1; margin: 0 0 18px; }
+    p { line-height: 1.6; }
+    .card { background: white; padding: 28px; border-radius: 14px; box-shadow: 0 8px 30px rgba(0,0,0,.07); }
+    label { display: block; margin-top: 14px; font-weight: 600; }
+    input, select { width: 100%; box-sizing: border-box; padding: 12px; margin-top: 6px; border: 1px solid #cbd5e1; border-radius: 8px; }
+    button { width: 100%; margin-top: 20px; padding: 13px; border: 0; border-radius: 8px; background: #111827; color: white; font-weight: 700; cursor: pointer; }
+    .note { font-size: 13px; color: #64748b; margin-top: 14px; }
+    @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } h1 { font-size: 36px; } }
+  </style>
+
+  <!--
+    GOOGLE TAG MANAGER PRACTICE:
+    Paste the GTM <script> snippet immediately below this comment.
+    Paste the GTM <noscript> snippet immediately after the opening <body> tag.
+  -->
+</head>
+<body>
+
+  <!-- Paste GTM <noscript> snippet here -->
+
+  <header>
+    <div class="brand">BrightPath Digital</div>
+  </header>
+
+  <main class="hero">
+    <section>
+      <h1>Get a free PPC account audit</h1>
+      <p>This is a fictional practice landing page made for learning Google Ads and Google Tag Manager conversion tracking.</p>
+      <p>You can use the form submission as a test conversion and verify it with Google Tag Assistant.</p>
+    </section>
+
+    <section class="card">
+      <h2>Request your audit</h2>
+      <form action="thank-you.html" method="get" id="lead-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Alex Smith" />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="alex@example.com" />
+
+        <label for="budget">Monthly ad budget</label>
+        <select id="budget" name="budget">
+          <option>Under £1,000</option>
+          <option>£1,000–£5,000</option>
+          <option>£5,000–£20,000</option>
+          <option>£20,000+</option>
+        </select>
+
+        <button type="submit">Request Free Audit</button>
+      </form>
+      <div class="note">Practice site only. Do not enter real personal information.</div>
+    </section>
+  </main>
+
+  <script>
+    // Optional dataLayer event for GTM practice.
+    document.getElementById('lead-form').addEventListener('submit', function() {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'lead_form_submit',
+        form_name: 'free_ppc_audit'
+      });
+    });
+  </script>
+</body>
+</html>
